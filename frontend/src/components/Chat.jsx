@@ -1,18 +1,3 @@
-// import React from "react";
-
-// const Chat = () => {
-//   return (
-//     <>
-//       <h2>Chat feature will be added soon...</h2>
-//       <h3>Wait for 1 months</h3>
-//     </>
-//   );
-// };
-
-// export default Chat;
-
-
-
 import React, { useEffect, useState } from "react";
 import io from "socket.io-client";
 import serverUrl from "../../config";
@@ -30,12 +15,6 @@ const Chat = () => {
   const [text, setText] = useState("");
 
   const theme = localStorage.getItem("theme");
-
-  // useEffect(() => {
-  //   if (!token || !user) {
-  //     navigate("/signup");
-  //   }
-  // }, [token, user, navigate]);
 
   useEffect(() => {
     if (!token || !user) {
