@@ -92,7 +92,7 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className=" text-2xl font-bold cursor-pointer">Bit StudyZone</a>
+            <a className=" text-2xl font-bold cursor-pointer">BIT StudyZone</a>
           </div>
           <div className="navbar-end space-x-5">
             <div className="navbar-center hidden lg:flex">

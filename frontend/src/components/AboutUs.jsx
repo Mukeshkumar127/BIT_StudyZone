@@ -29,10 +29,10 @@ function About() {
             isDark ? "text-pink-400" : "text-pink-600"
           }`}
         >
-          About Bit StudyZone
+          About BIT StudyZone
         </h1>
         <p className="text-lg leading-relaxed">
-          <strong>Bit StudyZone</strong> is a platform created to support students
+          <strong>BIT StudyZone</strong> is a platform created to support students
           of BIT Sindri by offering a centralized space for college updates,
           resources (like classnotes, PYQ, study materials), and peer-to-peer
           support.

@@ -85,7 +85,7 @@ const Chat = () => {
       }`}
     >
       <div className="p-4 text-xl font-bold text-center bg-pink-500 text-white">
-        💬 Doubt Discussion - Bit StudyZone
+        💬 Doubt Discussion - BIT StudyZone
       </div>
 
       <div className="flex-1 overflow-y-auto p-4 space-y-3">
