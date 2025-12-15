@@ -12,12 +12,22 @@ import Chat from "./model/chat.model.js";
 
 dotenv.config();
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://bit-studyzone-59sl.onrender.com",
+];
+
 const app = express();
 const PORT = process.env.PORT || 4000;
 const URI = process.env.MongoDBURI;
 
 // middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -37,10 +47,12 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: allowedOrigins,
     methods: ["GET", "POST"],
+    credentials: true,
   },
 });
+
 
 io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
