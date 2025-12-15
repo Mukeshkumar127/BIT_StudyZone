@@ -65,6 +65,7 @@ Authentication
 
 - JWT (JSON Web Token)
 
+
 🚀 How It Works
 
 👨‍🎓 For Students
