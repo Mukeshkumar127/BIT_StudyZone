@@ -3,7 +3,11 @@ import io from "socket.io-client";
 import serverUrl from "../../config";
 import { Link, useNavigate } from "react-router-dom";
 
-const socket = io(serverUrl);
+// const socket = io(serverUrl);
+const socket = io(serverUrl, {
+  withCredentials: true,
+  transports: ["websocket"],
+});
 
 const Chat = () => {
   const user = JSON.parse(localStorage.getItem("Users"));
