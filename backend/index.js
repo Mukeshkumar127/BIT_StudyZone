@@ -14,6 +14,7 @@ dotenv.config();
 
 const allowedOrigins = [
   "http://localhost:5173",
+  "https://hellozonest.netlify.app",
 ];
 
 const app = express();
