@@ -14,7 +14,6 @@ dotenv.config();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://bit-studyzone-59sl.onrender.com",
 ];
 
 const app = express();
