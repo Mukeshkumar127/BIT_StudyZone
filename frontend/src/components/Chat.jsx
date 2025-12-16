@@ -92,15 +92,17 @@ const Chat = () => {
           value={text}
           onChange={(e) => setText(e.target.value)}
           onKeyDown={(e) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      sendMessage();
-    }
-  }}
+            if (e.key === "Enter") {
+              e.preventDefault();
+              sendMessage();
+            }
+          }}
           placeholder="Ask your doubt..."
-          className="flex-1 p-2 border rounded "
+          className={`flex-1 p-2 border rounded ${
+            theme === "dark" ? "text-white" : "text-black"
+          }`}
         />
-        
+
         <button
           onClick={sendMessage}
           className="bg-pink-500 text-white px-4 rounded"
@@ -108,12 +110,11 @@ const Chat = () => {
           Send
         </button>
         <Link to="/">
-              <button className="bottom-6 right-6 z-50 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
-                Back
-              </button>
-            </Link>
+          <button className="bottom-6 right-6 z-50 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
+            Back
+          </button>
+        </Link>
       </div>
-      
     </div>
   );
 };
